@@ -18,10 +18,10 @@
             Home
           </a>
 
-          <a class="navbar-item" href="/faq">
+          <a class="navbar-item" >
             Features
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="/#/faq">
             FAQ
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
