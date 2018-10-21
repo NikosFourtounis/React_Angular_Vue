@@ -90,4 +90,7 @@ export default {
 h2
   margin: 1.5rem 0 2rem 0 !important
     
+.fa-cog
+  font-size: 40px
+    margin-bottom: 2rem
 </style>
