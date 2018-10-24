@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #383838; }
+  .navbar a:hover {
+    color: gray; }
+
+a.navbar-item {
+  color: #C1C1C1;
+  padding: 0.5rem 1.75rem; }
+
+a.navbar-link {
+  color: #C1C1C1;
+  padding: 0.5rem 1.75rem; }
+
+a.navbar-burger {
+  color: #C1C1C1; }
+
+footer {
+  background-color: #1EC9AC !important;
+  color: #fff; }
+  footer .icon {
+    color: #fff;
+    margin-left: 20px; }
