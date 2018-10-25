@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Header.css';
-
+import { Link } from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-          <div className="navbar-brand">
+        <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+          <div className="navbar-brand"> 
             <a className="navbar-item" href="https://bulma.io">
               <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
             </a>
@@ -20,31 +20,33 @@ class Header extends Component {
 
           <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-start">
-              <a className="navbar-item">
+              <a class="navbar-item" href="/">
                 Home
               </a>
 
-              <a className="navbar-item">
-                Documentation
+              <a class="navbar-item" href="/Faq">
+                Features
               </a>
-
-              <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">
+              <a class="navbar-item">
+                FAQ
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
                   More
                 </a>
 
-                <div className="navbar-dropdown">
-                  <a className="navbar-item">
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
                     About
                   </a>
-                  <a className="navbar-item">
+                  <a class="navbar-item">
                     Jobs
                   </a>
-                  <a className="navbar-item">
+                  <a class="navbar-item">
                     Contact
                   </a>
-                  <hr className="navbar-divider"/>
-                  <a className="navbar-item">
+                  <hr class="navbar-divider"/>
+                  <a class="navbar-item">
                     Report an issue
                   </a>
                 </div>
