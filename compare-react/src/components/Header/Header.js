@@ -2,7 +2,22 @@ import React, { Component } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 class Header extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {isToggleOn: false};
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState =>({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
   render() {
+
+    let menuActive = this.state.isToggleOn ? 'is-active' : '';
     return (
       <div className="App">
         <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
@@ -11,14 +26,14 @@ class Header extends Component {
               <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
             </a>
 
-            <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" className={'navbar-burger burger '+menuActive} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={this.handleClick}>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
           </div>
 
-          <div id="navbarBasicExample" className="navbar-menu">
+          <div id="navbarBasicExample" className={'navbar-menu '+menuActive}>
             <div className="navbar-start">
               <a class="navbar-item" href="/">
                 Home
