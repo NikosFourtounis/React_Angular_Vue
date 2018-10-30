@@ -5,7 +5,6 @@ import Faq from './components/Faq/Faq';
 import Home from './components/Home/Home';
 import './App.css';
 import { Route } from 'react-router-dom';
-
 class App extends Component {
   render() {
     return (

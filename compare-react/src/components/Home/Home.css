@@ -1,0 +1,12 @@
+.hero {
+  background: url("../../assets/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  background-size: cover; }
+
+h2 {
+  margin: 1.5rem 0 2rem 0 !important; }
+
+.fa-cog {
+  font-size: 40px;
+    font-size-margin-bottom: 2rem; }
